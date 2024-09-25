@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+.titulo-contenedor {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 20px;
+}
+
+.store-proximamente {
+    font-size: 2.5em;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.icono-store {
+    margin-right: 10px;
+    color: rgb(226, 193, 6); 
+    font-size: 1.5em; 
+}
+
+app-footer {
+    margin-top: auto; 
+    background-color: #f9f9f9; 
+    padding: 10px 0; 
+    text-align: center; 
+    color: #333;
+}
+
+.store-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.store-product {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    margin: 10px; 
+    max-width: calc(25% - 20px); 
+    width: calc(25% - 20px); 
+    transition: transform 0.3s;
+}
+
+.store-product:hover {
+    transform: scale(1.05);
+}
+
+.img-store {
+    width: 100%; 
+    height: auto;
+    border-radius: 10px;
+}
+
+.nombre-store {
+    font-size: 1.2em; 
+    color: #333;
+    margin: 10px 0;
+}
+
+.precio-store {
+    font-size: 1em; 
+    color: #e74c3c;
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .store-product {
+        max-width: calc(50% - 20px); 
+        width: calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 480px) {
+    .store-product {
+        max-width: calc(100% - 20px); 
+        width: calc(100% - 20px); 
+    }
+}
